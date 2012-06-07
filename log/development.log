@@ -31851,3 +31851,105 @@ Processing by SearchesController#search_multiplex as JS
   Parameters: {"city"=>"2", "date"=>"", "multiplex"=>"132"}
   Rendered searches/search_multiplex.js.erb (1.6ms)
 Completed 200 OK in 697ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-06-07 17:33:06 -0500
+Processing by SearchesController#index as HTML
+  Rendered searches/index.html.erb within layouts/application (44.9ms)
+Completed 200 OK in 2701ms (Views: 101.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-07 17:33:09 -0500
+Served asset /application.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/chosen.css?body=1" for 127.0.0.1 at 2012-06-07 17:33:09 -0500
+Served asset /chosen.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2012-06-07 17:33:09 -0500
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (37ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-07 17:33:09 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (26ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-07 17:33:09 -0500
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/calendar.css?body=1" for 127.0.0.1 at 2012-06-07 17:33:09 -0500
+Served asset /calendar.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-06-07 17:33:09 -0500
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-06-07 17:33:09 -0500
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-06-07 17:33:09 -0500
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-06-07 17:33:09 -0500
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-06-07 17:33:09 -0500
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-06-07 17:33:09 -0500
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-06-07 17:33:09 -0500
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-06-07 17:33:09 -0500
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-06-07 17:33:09 -0500
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-06-07 17:33:09 -0500
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-06-07 17:33:09 -0500
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-06-07 17:33:09 -0500
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2012-06-07 17:33:09 -0500
+Served asset /twitter/bootstrap.js - 304 Not Modified (18ms)
+
+
+Started GET "/assets/chosen.jquery.min.js?body=1" for 127.0.0.1 at 2012-06-07 17:33:09 -0500
+Served asset /chosen.jquery.min.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.tools.min.js?body=1" for 127.0.0.1 at 2012-06-07 17:33:09 -0500
+Served asset /jquery.tools.min.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-06-07 17:33:09 -0500
+Served asset /bootstrap.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-07 17:33:09 -0500
+Served asset /application.js - 304 Not Modified (65ms)
+
+
+Started GET "/assets/chosen-sprite.png" for 127.0.0.1 at 2012-06-07 17:33:09 -0500
+Served asset /chosen-sprite.png - 304 Not Modified (1ms)
