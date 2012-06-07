@@ -1,0 +1,30 @@
+<center><h1>Omniplex</h1></center>
+
+<div class= "form-container">
+	
+	<h3>Consultar por pelicula</h3>	
+	<%= form_tag '/search.js', :id => "search" ,remote: true do  %>
+		<% label_tag "Ciudad: "%>
+		<%= select_tag :cities,options_for_select(@cities,2), 
+					{:include_blank => true, :class => "chzn-select", :id => "city"} %>
+		<% label_tag "Pelicula: "%>
+		<%= select_tag :movies,options_for_select(@movies,2), 
+					{:include_blank => true, :class => "chzn-select", :id => "movies"} %>							
+		<% label_tag "Fecha: "%>
+		<%= text_field_tag :date, nil,{:class => "date-picker"} %><br>
+	<div id = "btn-content"><%= submit_tag "Buscar", :id => "submit-search" %></div>
+	<% end %>
+</div>
+
+<div class= "form-container">
+<h3>Consultar por Multiplex</h3>
+<% label_tag "Multiplex: "%>
+<span id = "multiplex-container">
+<%= select_tag :multiplex,options_for_select(@multiplex,2), 
+							{:include_blank => true, :class => "chzn-select", :id => "multiplex"} %>
+</span>
+</div>
+<span class = "advice">Llego la respuesta</span>
+<div id = "multiplex-respond"></div>
+
+<div id="procinal"></div>

@@ -1,0 +1,10 @@
+$("span.advice").css('display','block').fadeOut(2000);
+<% if @search_result.blank? %>
+	$('#multiplex-respond').html("<p>Lo sentimos pero no se encontro informacion en el multiples sobre la pelicula</p>");
+<% else %>
+	$('#multiplex-respond').html("\<%= j @search_result.html_safe %>");
+	$(".combofiltros").remove();
+	$('#multiplex-respond img').remove();
+	$("#multiplex-respond table").addClass("table table-striped");
+	$('.titulo table td').css('background-image','none');
+<% end %>

@@ -1,0 +1,10 @@
+<% if @search_result.blank? %>
+	$('#multiplex-respond').html("<p>Lo sentimos pero no se encontro informacion de ese multiplex</p>");
+<% else %>
+	$('#multiplex-respond').html("\<%= j @search_result.html_safe %>");
+	$(".combofiltros").remove();
+	$("#multiplex-respond table").addClass("table table-striped");
+	$('#multiplex-respond table table').remove();
+	$('#multiplex-respond .titulo img').remove();
+	$('.titulo table td').css('background-image','none');
+<% end %>
