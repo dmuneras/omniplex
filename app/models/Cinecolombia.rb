@@ -1,9 +1,9 @@
 require 'open-uri'
 class Cinecolombia
-
+  
   def self.cities
     url = "http://www.cinecolombia.com/Default.aspx" 
-    cinecol = Hpricot(open(url))
+    cinecol = Hpricot(open(url,"r:iso-8859-1:utf-8"))
     cities_cinecol = []
     cities = (cinecol/"select.combociudades/option")
     cities.each do |city|

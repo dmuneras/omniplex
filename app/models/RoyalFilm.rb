@@ -29,5 +29,4 @@ class RoyalFilm
       movies = (royal/"table")
       return movies.inner_html.gsub(/\s+/, " ").strip
    end
-
 end

@@ -40,6 +40,7 @@ $('document').ready(function(){
 	});
 	$('#submit-search').click(function(){
 		var spinner = new Spinner().spin();
+		$('#multiplex-respond').html("");		
 		$('#multiplex-respond').prepend(spinner.el);
 	});
 	
@@ -68,6 +69,7 @@ $('document').ready(function(){
 		var date =  $('input#date').val();
 		var mul =  $('select#multiplex option:selected').val();
 		var spinner = new Spinner().spin();
+		$('#multiplex-respond').html("");		
 		$('#multiplex-respond').prepend(spinner.el);
 		var rq_url = "/search_multiplex.js?city=" + city + "&date=" + date + "&multiplex=" + mul; 
 		$.ajax({
@@ -82,6 +84,7 @@ $('document').ready(function(){
 		var mul =  $('select#multiplex_royal option:selected').val();
 		var rq_url = "/search_multiplex_royal.js?city=" + city + "&multiplex=" + mul; 
 		var spinner = new Spinner().spin();
+		$('#multiplex-respond').html("");
 		$('#multiplex-respond').prepend(spinner.el);
 		$.ajax({
 		  url: rq_url
