@@ -1,0 +1,19 @@
+<center><h1>Royal Films</h1></center>
+
+<div class= "form-container">
+
+	<h3>Consultar por pelicula</h3>	
+	<%= form_tag '/search.js', :id => "search_royal" ,remote: true do  %>
+		<% label_tag "Ciudad: "%>
+		<%= select_tag :cities_royal,options_for_select(@cities,2), 
+					{:include_blank => true, :class => "chzn-select", :id => "city_royal"} %>
+		<% label_tag "Pelicula: "%>
+		<span id = "multiplex-container">
+		<%= select_tag :multiplex_royal,options_for_select(@multiplex,2), 
+									{:include_blank => true, :class => "chzn-select", :id => "multiplex_royal"} %>
+		</span>
+	
+	<% end %>
+</div>
+<span class = "advice">Llego la respuesta</span>
+<div id = "multiplex-respond"></div>

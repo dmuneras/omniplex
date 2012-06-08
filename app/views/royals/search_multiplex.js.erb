@@ -1,0 +1,5 @@
+<% if @search_result.blank? %>
+	$('#multiplex-respond').html("<p>Lo sentimos pero no se encontro informacion de ese multiplex</p>");
+<% else %>
+	$('#multiplex-respond').html("\<%= j @search_result.html_safe %>");
+<% end %>
