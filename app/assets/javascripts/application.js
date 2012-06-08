@@ -40,7 +40,17 @@ $('document').ready(function(){
 	});
 	$('select#city').live("change" , function() {
 	  var city = $('select#city option:selected').val();
-	  var url = '/update_multiplex?city='+ city;
+	  var url = '/update_multiplex_cinecol?city='+ city;
+	  $('#multiplex-container').load(url , function(){
+		$('.chzn-select').chosen();
+		$("select#multiplex").trigger('liszt:updated');	
+	  });
+	
+	});
+	
+	$('select#city_royal').live("change" , function() {
+	  var city = $('select#city_royal option:selected').val();
+	  var url = '/update_multiplex_royal?city='+ city;
 	  $('#multiplex-container').load(url , function(){
 		$('.chzn-select').chosen();
 		$("select#multiplex").trigger('liszt:updated');	
@@ -56,6 +66,18 @@ $('document').ready(function(){
 		$.ajax({
 		  url: rq_url
 		}).done(function(){
+		});
+	});
+	
+	$('select#multiplex_royal').live("change",function(){
+		var city =  $('select#city_royal option:selected').val();
+		var mul =  $('select#multiplex_royal option:selected').val();
+		var rq_url = "/search_multiplex_royal.js?city=" + city + "&multiplex=" + mul; 
+		$.ajax({
+		  url: rq_url
+		}).complete(function(){
+			$('#multiplex-respond').html($('#multiplex-respond td:regex(width,755)').html());
+			$("#multiplex-respond table").addClass("table table-striped");
 		});
 	});
 	

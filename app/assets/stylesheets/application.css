@@ -38,6 +38,13 @@ form#search{
 	margin-right:auto;
 	width:70%;
 }
+
+form#search_royal{
+	margin-top:20px;
+	margin-left:auto;
+	margin-right:auto;
+	width:50%;
+}
 form#search div , form#search label  {
 	float:left;
 	margin-right:10px;
