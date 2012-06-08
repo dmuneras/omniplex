@@ -69,3 +69,7 @@ span.advice{
 div#multiplex-respond{
 	margin-top:30px;
 }
+
+div.spinner{
+	margin-left: 50%;
+}

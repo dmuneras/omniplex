@@ -38,6 +38,11 @@ $('document').ready(function(){
 		offset: [0, 0],            
 		speed: 'fast'
 	});
+	$('#submit-search').click(function(){
+		var spinner = new Spinner().spin();
+		$('#multiplex-respond').prepend(spinner.el);
+	});
+	
 	$('select#city').live("change" , function() {
 	  var city = $('select#city option:selected').val();
 	  var url = '/update_multiplex_cinecol?city='+ city;
@@ -62,10 +67,13 @@ $('document').ready(function(){
 		var city =  $('select#city option:selected').val();
 		var date =  $('input#date').val();
 		var mul =  $('select#multiplex option:selected').val();
+		var spinner = new Spinner().spin();
+		$('#multiplex-respond').prepend(spinner.el);
 		var rq_url = "/search_multiplex.js?city=" + city + "&date=" + date + "&multiplex=" + mul; 
 		$.ajax({
 		  url: rq_url
 		}).done(function(){
+			spinner.stop();
 		});
 	});
 	
@@ -73,11 +81,14 @@ $('document').ready(function(){
 		var city =  $('select#city_royal option:selected').val();
 		var mul =  $('select#multiplex_royal option:selected').val();
 		var rq_url = "/search_multiplex_royal.js?city=" + city + "&multiplex=" + mul; 
+		var spinner = new Spinner().spin();
+		$('#multiplex-respond').prepend(spinner.el);
 		$.ajax({
 		  url: rq_url
 		}).complete(function(){
 			$('#multiplex-respond').html($('#multiplex-respond td:regex(width,755)').html());
 			$("#multiplex-respond table").addClass("table table-striped");
+			spinner.stop();
 		});
 	});
 	
